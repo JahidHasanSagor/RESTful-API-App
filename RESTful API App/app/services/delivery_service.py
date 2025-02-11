@@ -2,8 +2,8 @@ import requests
 from app.models.venue_model import Venue
 
 def fetch_venue_data(venue_slug):
-    static_url = f"https://consumer-api.development.dev.woltapi.com/home-assignment-api/v1/venues/{venue_slug}/static"
-    dynamic_url = f"https://consumer-api.development.dev.woltapi.com/home-assignment-api/v1/venues/{venue_slug}/dynamic"
+    static_url = f"https://consumer-api.development.dev.woltapi.com/home-assignment-api/v1/venues/{venue_slug}/static" #API from Wolt
+    dynamic_url = f"https://consumer-api.development.dev.woltapi.com/home-assignment-api/v1/venues/{venue_slug}/dynamic" #API from Wolt
 
     try:
         # Make requests to both the static and dynamic URLs
